@@ -11,8 +11,6 @@
 		441B78D42BBD7E0300A1CB09 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 441B78D22BBD7E0300A1CB09 /* PrivacyInfo.xcprivacy */; };
 		441B78D52BBD7E0300A1CB09 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 441B78D22BBD7E0300A1CB09 /* PrivacyInfo.xcprivacy */; };
 		441B78D62BBD7E0300A1CB09 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 441B78D22BBD7E0300A1CB09 /* PrivacyInfo.xcprivacy */; };
-		570A348C26D7275C000EEF2E /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570A348B26D7275C000EEF2E /* Photos.framework */; };
-		570A348E26D72762000EEF2E /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570A348D26D72762000EEF2E /* PhotosUI.framework */; };
 		570A349026D72768000EEF2E /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570A348F26D72768000EEF2E /* PhotosUI.framework */; };
 		57DD378A26D61592005090FF /* TZAuthLimitedFooterTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DD378926D61592005090FF /* TZAuthLimitedFooterTipView.m */; };
 		57DD378E26D619C9005090FF /* TZAuthLimitedFooterTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DD378926D61592005090FF /* TZAuthLimitedFooterTipView.m */; };
@@ -22,6 +20,25 @@
 		6DC358661CC8BAFD00898D29 /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DC358651CC8BAFD00898D29 /* TZImagePickerController.bundle */; };
 		6DC84D0A1DF5358500A107A9 /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC84D091DF5358500A107A9 /* TZImageCropManager.m */; };
 		6DD0502B1DF659ED0057C78D /* TZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD0502A1DF659ED0057C78D /* TZProgressView.m */; };
+		75CA04922CF07855003FE98C /* CXCropCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CA04852CF07854003FE98C /* CXCropCase.m */; };
+		75CA04932CF07855003FE98C /* CXCropCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CA04852CF07854003FE98C /* CXCropCase.m */; };
+		75CA04942CF07855003FE98C /* CXCropFunctionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CA04862CF07854003FE98C /* CXCropFunctionBar.m */; };
+		75CA04952CF07855003FE98C /* CXCropFunctionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CA04862CF07854003FE98C /* CXCropFunctionBar.m */; };
+		75CA04962CF07855003FE98C /* CXImageEditConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 75CA04872CF07854003FE98C /* CXImageEditConfig.h */; };
+		75CA04972CF07855003FE98C /* UIResponder+Router.h in Headers */ = {isa = PBXBuildFile; fileRef = 75CA04882CF07854003FE98C /* UIResponder+Router.h */; };
+		75CA04982CF07855003FE98C /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CA04892CF07854003FE98C /* UIResponder+Router.m */; };
+		75CA04992CF07855003FE98C /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CA04892CF07854003FE98C /* UIResponder+Router.m */; };
+		75CA049A2CF07855003FE98C /* CXEditModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 75CA048A2CF07854003FE98C /* CXEditModel.h */; };
+		75CA049B2CF07855003FE98C /* CXCropCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 75CA048B2CF07854003FE98C /* CXCropCase.h */; };
+		75CA049C2CF07855003FE98C /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CA048C2CF07855003FE98C /* UIImage+Crop.m */; };
+		75CA049D2CF07855003FE98C /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CA048C2CF07855003FE98C /* UIImage+Crop.m */; };
+		75CA049E2CF07855003FE98C /* CXImageEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CA048D2CF07855003FE98C /* CXImageEditView.m */; };
+		75CA049F2CF07855003FE98C /* CXImageEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CA048D2CF07855003FE98C /* CXImageEditView.m */; };
+		75CA04A02CF07855003FE98C /* CXCropFunctionBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 75CA048E2CF07855003FE98C /* CXCropFunctionBar.h */; };
+		75CA04A12CF07855003FE98C /* UIImage+Crop.h in Headers */ = {isa = PBXBuildFile; fileRef = 75CA048F2CF07855003FE98C /* UIImage+Crop.h */; };
+		75CA04A22CF07855003FE98C /* CXImageEditView.h in Headers */ = {isa = PBXBuildFile; fileRef = 75CA04902CF07855003FE98C /* CXImageEditView.h */; };
+		75CA04A32CF07856003FE98C /* CXEditModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CA04912CF07855003FE98C /* CXEditModel.m */; };
+		75CA04A42CF07856003FE98C /* CXEditModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CA04912CF07855003FE98C /* CXEditModel.m */; };
 		90020E1320F8840800D3AB10 /* TZImagePickerController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 90020E1220F8840800D3AB10 /* TZImagePickerController.podspec */; };
 		90020E1520F8840F00D3AB10 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 90020E1420F8840E00D3AB10 /* README.md */; };
 		9005E2B3257A462E002A8682 /* UIView+TZLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9005E2B1257A462E002A8682 /* UIView+TZLayout.m */; };
@@ -127,8 +144,6 @@
 
 /* Begin PBXFileReference section */
 		441B78D22BBD7E0300A1CB09 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		570A348B26D7275C000EEF2E /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
-		570A348D26D72762000EEF2E /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/iOSSupport/System/Library/Frameworks/PhotosUI.framework; sourceTree = DEVELOPER_DIR; };
 		570A348F26D72768000EEF2E /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
 		57DD378826D61592005090FF /* TZAuthLimitedFooterTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAuthLimitedFooterTipView.h; sourceTree = "<group>"; };
 		57DD378926D61592005090FF /* TZAuthLimitedFooterTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAuthLimitedFooterTipView.m; sourceTree = "<group>"; };
@@ -145,6 +160,19 @@
 		6DC84D091DF5358500A107A9 /* TZImageCropManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageCropManager.m; sourceTree = "<group>"; };
 		6DD050291DF659ED0057C78D /* TZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZProgressView.h; sourceTree = "<group>"; };
 		6DD0502A1DF659ED0057C78D /* TZProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZProgressView.m; sourceTree = "<group>"; };
+		75CA04852CF07854003FE98C /* CXCropCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXCropCase.m; sourceTree = "<group>"; };
+		75CA04862CF07854003FE98C /* CXCropFunctionBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXCropFunctionBar.m; sourceTree = "<group>"; };
+		75CA04872CF07854003FE98C /* CXImageEditConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXImageEditConfig.h; sourceTree = "<group>"; };
+		75CA04882CF07854003FE98C /* UIResponder+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
+		75CA04892CF07854003FE98C /* UIResponder+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
+		75CA048A2CF07854003FE98C /* CXEditModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXEditModel.h; sourceTree = "<group>"; };
+		75CA048B2CF07854003FE98C /* CXCropCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXCropCase.h; sourceTree = "<group>"; };
+		75CA048C2CF07855003FE98C /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
+		75CA048D2CF07855003FE98C /* CXImageEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXImageEditView.m; sourceTree = "<group>"; };
+		75CA048E2CF07855003FE98C /* CXCropFunctionBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXCropFunctionBar.h; sourceTree = "<group>"; };
+		75CA048F2CF07855003FE98C /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
+		75CA04902CF07855003FE98C /* CXImageEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXImageEditView.h; sourceTree = "<group>"; };
+		75CA04912CF07855003FE98C /* CXEditModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXEditModel.m; sourceTree = "<group>"; };
 		90020E1220F8840800D3AB10 /* TZImagePickerController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TZImagePickerController.podspec; sourceTree = SOURCE_ROOT; };
 		90020E1420F8840E00D3AB10 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		9005E2B1257A462E002A8682 /* UIView+TZLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TZLayout.m"; sourceTree = "<group>"; };
@@ -235,8 +263,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570A348E26D72762000EEF2E /* PhotosUI.framework in Frameworks */,
-				570A348C26D7275C000EEF2E /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +284,26 @@
 				6DC358651CC8BAFD00898D29 /* TZImagePickerController.bundle */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		75CA04842CF07825003FE98C /* CXImageEdit */ = {
+			isa = PBXGroup;
+			children = (
+				75CA048B2CF07854003FE98C /* CXCropCase.h */,
+				75CA04852CF07854003FE98C /* CXCropCase.m */,
+				75CA048A2CF07854003FE98C /* CXEditModel.h */,
+				75CA04912CF07855003FE98C /* CXEditModel.m */,
+				75CA04872CF07854003FE98C /* CXImageEditConfig.h */,
+				75CA04902CF07855003FE98C /* CXImageEditView.h */,
+				75CA048D2CF07855003FE98C /* CXImageEditView.m */,
+				75CA048E2CF07855003FE98C /* CXCropFunctionBar.h */,
+				75CA04862CF07854003FE98C /* CXCropFunctionBar.m */,
+				75CA048F2CF07855003FE98C /* UIImage+Crop.h */,
+				75CA048C2CF07855003FE98C /* UIImage+Crop.m */,
+				75CA04882CF07854003FE98C /* UIResponder+Router.h */,
+				75CA04892CF07854003FE98C /* UIResponder+Router.m */,
+			);
+			path = CXImageEdit;
 			sourceTree = "<group>";
 		};
 		900E65731C2BB8D5003D9A9E = {
@@ -288,6 +334,7 @@
 			children = (
 				5B7A0D4F288691E7002B2603 /* Location */,
 				901F228F215CABD600F604ED /* FLAnimatedImage */,
+				75CA04842CF07825003FE98C /* CXImageEdit */,
 				900EEFF51C2BBF7600EA709B /* TZImagePickerController */,
 				900E65821C2BB8D5003D9A9E /* AppDelegate.h */,
 				900E65831C2BB8D5003D9A9E /* AppDelegate.m */,
@@ -393,9 +440,7 @@
 		903996911F447603005E77C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				570A348D26D72762000EEF2E /* PhotosUI.framework */,
 				570A348F26D72768000EEF2E /* PhotosUI.framework */,
-				570A348B26D7275C000EEF2E /* Photos.framework */,
 				903996941F447609005E77C2 /* AssetsLibrary.framework */,
 				903996921F447604005E77C2 /* Photos.framework */,
 			);
@@ -429,8 +474,10 @@
 				901CC3FA21CB757500C55443 /* TZImageRequestOperation.h in Headers */,
 				9F763A6B1FA0731E00D9E526 /* TZImagePickerController.h in Headers */,
 				9F763A6D1FA0733700D9E526 /* NSBundle+TZImagePicker.h in Headers */,
+				75CA04962CF07855003FE98C /* CXImageEditConfig.h in Headers */,
 				9F763A6C1FA0733100D9E526 /* TZAssetModel.h in Headers */,
 				9F763A731FA0741D00D9E526 /* TZVideoPlayerController.h in Headers */,
+				75CA049B2CF07855003FE98C /* CXCropCase.h in Headers */,
 				9F763A741FA0741D00D9E526 /* TZGifPhotoPreviewController.h in Headers */,
 				9005E2B5257A462E002A8682 /* UIView+TZLayout.h in Headers */,
 				9F763A761FA0741D00D9E526 /* TZImageManager.h in Headers */,
@@ -439,8 +486,13 @@
 				9F763A721FA0741D00D9E526 /* TZPhotoPreviewCell.h in Headers */,
 				9F763A701FA0741D00D9E526 /* TZAssetCell.h in Headers */,
 				9F763A6F1FA0741D00D9E526 /* TZPhotoPickerController.h in Headers */,
+				75CA04A02CF07855003FE98C /* CXCropFunctionBar.h in Headers */,
+				75CA04972CF07855003FE98C /* UIResponder+Router.h in Headers */,
+				75CA049A2CF07855003FE98C /* CXEditModel.h in Headers */,
+				75CA04A22CF07855003FE98C /* CXImageEditView.h in Headers */,
 				9F763A751FA0741D00D9E526 /* TZProgressView.h in Headers */,
 				9F763A771FA0741D00D9E526 /* TZImageCropManager.h in Headers */,
+				75CA04A12CF07855003FE98C /* UIImage+Crop.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,10 +680,12 @@
 				B662C36F2662914D006A672A /* TZVideoEditedPreviewController.m in Sources */,
 				9038D5911C3974F0007DE549 /* TZTestCell.m in Sources */,
 				900EF00F1C2C0B1100EA709B /* TZAssetModel.m in Sources */,
+				75CA049E2CF07855003FE98C /* CXImageEditView.m in Sources */,
 				900EEFFE1C2BD58B00EA709B /* TZPhotoPickerController.m in Sources */,
 				900EF0021C2BD7E400EA709B /* TZAssetCell.m in Sources */,
 				6DD0502B1DF659ED0057C78D /* TZProgressView.m in Sources */,
 				6D32B9BD1CD83640005CE1E0 /* LxGridViewFlowLayout.m in Sources */,
+				75CA04942CF07855003FE98C /* CXCropFunctionBar.m in Sources */,
 				57DD378A26D61592005090FF /* TZAuthLimitedFooterTipView.m in Sources */,
 				6D4608311DFFC60D004FB009 /* TZGifPhotoPreviewController.m in Sources */,
 				900EF0161C2C134900EA709B /* TZPhotoPreviewCell.m in Sources */,
@@ -648,7 +702,11 @@
 				900EF0121C2C107400EA709B /* TZPhotoPreviewController.m in Sources */,
 				901CC3FC21CB758500C55443 /* TZImageRequestOperation.m in Sources */,
 				6D5358CD1D64600F00928CC6 /* NSBundle+TZImagePicker.m in Sources */,
+				75CA04A32CF07856003FE98C /* CXEditModel.m in Sources */,
 				900EEFF81C2BBF9500EA709B /* TZImagePickerController.m in Sources */,
+				75CA04922CF07855003FE98C /* CXCropCase.m in Sources */,
+				75CA049C2CF07855003FE98C /* UIImage+Crop.m in Sources */,
+				75CA04982CF07855003FE98C /* UIResponder+Router.m in Sources */,
 				6DC84D0A1DF5358500A107A9 /* TZImageCropManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -673,6 +731,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75CA04952CF07855003FE98C /* CXCropFunctionBar.m in Sources */,
 				57DD378E26D619C9005090FF /* TZAuthLimitedFooterTipView.m in Sources */,
 				B662C37326629179006A672A /* TZVideoEditedPreviewController.m in Sources */,
 				B6977B0A265FDB280028BA31 /* TZVideoCropController.m in Sources */,
@@ -682,12 +741,17 @@
 				9F763A541FA072E500D9E526 /* TZAssetCell.m in Sources */,
 				9F763A561FA072E500D9E526 /* TZAssetModel.m in Sources */,
 				9F763A581FA072E500D9E526 /* TZPhotoPreviewController.m in Sources */,
+				75CA04932CF07855003FE98C /* CXCropCase.m in Sources */,
+				75CA04992CF07855003FE98C /* UIResponder+Router.m in Sources */,
 				9005E2B4257A462E002A8682 /* UIView+TZLayout.m in Sources */,
 				9F763A5A1FA072E500D9E526 /* TZPhotoPreviewCell.m in Sources */,
 				9F763A5C1FA072E500D9E526 /* TZVideoPlayerController.m in Sources */,
+				75CA049D2CF07855003FE98C /* UIImage+Crop.m in Sources */,
 				9F763A5E1FA072E500D9E526 /* TZGifPhotoPreviewController.m in Sources */,
 				9F763A601FA072E500D9E526 /* TZProgressView.m in Sources */,
+				75CA04A42CF07856003FE98C /* CXEditModel.m in Sources */,
 				908D11592887ED8000DD212E /* TZLocationManager.m in Sources */,
+				75CA049F2CF07855003FE98C /* CXImageEditView.m in Sources */,
 				9F763A621FA072E500D9E526 /* TZImageManager.m in Sources */,
 				9F763A641FA072E500D9E526 /* TZImageCropManager.m in Sources */,
 				9F763A6A1FA072E500D9E526 /* NSBundle+TZImagePicker.m in Sources */,
@@ -866,6 +930,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 3.8.8;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = tanzhenios2025.TZImagePickerController.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

@@ -13,6 +13,7 @@
 #import "TZImagePickerController.h"
 #import "TZImageManager.h"
 #import "TZImageCropManager.h"
+#import "CXImageEditView.h"
 
 @interface TZPhotoPreviewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UIScrollViewDelegate> {
     UICollectionView *_collectionView;
@@ -58,6 +59,21 @@
         self.models = [NSMutableArray arrayWithArray:_tzImagePickerVc.selectedModels];
         _assetsTemp = [NSMutableArray arrayWithArray:_tzImagePickerVc.selectedAssets];
     }
+    
+    //允许裁剪时，显示裁剪view，不显示collectionview，toolBar，navibar
+    if (self.models.count > self.currentIndex && _tzImagePickerVc.allowCrop) {
+        TZAssetModel *model = _models[self.currentIndex];
+        __weak typeof(self) weakSelf = self;
+        [[TZImageManager manager] getPhotoWithAsset:model.asset completion:^(UIImage *photo, NSDictionary *info, BOOL isDegraded) {
+            if (photo && !isDegraded) {
+                __strong typeof(weakSelf) strongSelf = weakSelf;
+                [strongSelf cx_configCXImageEditView:photo];
+            }
+        } progressHandler:nil networkAccessAllowed:NO];
+        
+        return;
+    }
+    
     [self configCollectionView];
     [self configCustomNaviBar];
     [self configBottomToolBar];
@@ -79,6 +95,13 @@
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     [UIApplication sharedApplication].statusBarHidden = YES;
+    
+    TZImagePickerController *_tzImagePickerVc = (TZImagePickerController *)self.navigationController;
+    //允许裁剪时，显示裁剪view，不显示collectionview，toolBar，navibar
+    if (_tzImagePickerVc.allowCrop) {
+        return;
+    }
+    
     [_collectionView setContentOffset:CGPointMake((self.view.tz_width + 20) * self.currentIndex, 0) animated:NO];
     [self refreshNaviBarAndBottomBarState];
 }
@@ -95,6 +118,29 @@
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
+}
+
+//允许裁剪时显示裁剪view
+- (void)cx_configCXImageEditView:(UIImage *)image {
+    CXImageEditView *editView = [[CXImageEditView alloc]initWithEditImage:image];
+    __weak typeof(self) weakSelf = self;
+    editView.customBackAction = ^{
+        [weakSelf backButtonClick];
+    };
+    
+    editView.completeEdit = ^(UIImage * _Nonnull resultImg) {
+        [weakSelf cx_didCropedImage:resultImg];
+    };
+    
+    editView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+    [self.view addSubview:editView];
+}
+
+- (void)cx_didCropedImage:(UIImage *)image {
+    if (self.doneButtonClickBlockCropMode) {
+        TZAssetModel *model = _models[self.currentIndex];
+        self.doneButtonClickBlockCropMode(image,model.asset);
+    }
 }
 
 - (void)configCustomNaviBar {
@@ -258,6 +304,11 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     TZImagePickerController *_tzImagePickerVc = (TZImagePickerController *)self.navigationController;
+    
+    //允许裁剪时，显示裁剪view，不显示collectionview，toolBar，navibar
+    if (_tzImagePickerVc.allowCrop) {
+        return;
+    }
     
     BOOL isFullScreen = self.view.tz_height == [UIScreen mainScreen].bounds.size.height;
     CGFloat statusBarHeight = isFullScreen ? [TZCommonTools tz_statusBarHeight] : 0;
