@@ -2,12 +2,12 @@ Pod::Spec.new do |s|
   s.name         = "TZImagePickerController"
   s.version      = "3.8.8"
   s.summary      = "A clone of UIImagePickerController, support picking multiple photos、original photo and video"
-  s.homepage     = "https://github.com/banchichen/TZImagePickerController"
+  s.homepage     = "https://github.com/iBringer/TZImagePickerController.git"
   s.license      = "MIT"
-  s.author       = { "banchichen" => "tanzhenios@foxmail.com" }
+  s.author       = { "iBringer" => "iBringer@126.com" }
   s.platform     = :ios
-  s.ios.deployment_target = "10.0"
-  s.source       = { :git => "https://github.com/banchichen/TZImagePickerController.git", :tag => "3.8.8" }
+  s.ios.deployment_target = "12.0"
+  s.source       = { :git => "https://github.com/iBringer/TZImagePickerController.git", :tag => "3.9.0" }
   s.requires_arc = true
   
   s.subspec 'Basic' do |b|
@@ -17,6 +17,10 @@ Pod::Spec.new do |s|
   
   s.subspec 'Location' do |l|
     l.source_files = 'TZImagePickerController/Location/*.{h,m}'
+  end
+    
+  s.subspec 'CXImageEdit' do |l|
+    l.source_files = 'TZImagePickerController/CXImageEdit/*.{h,m}'
   end
   
   s.frameworks   = "Photos", "PhotosUI"
