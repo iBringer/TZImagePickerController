@@ -18,6 +18,10 @@ Pod::Spec.new do |s|
   s.subspec 'Location' do |l|
     l.source_files = 'TZImagePickerController/Location/*.{h,m}'
   end
+    
+  s.subspec 'Location' do |l|
+    l.source_files = 'TZImagePickerController/CXImageEdit/*.{h,m}'
+  end
   
   s.frameworks   = "Photos", "PhotosUI"
 end
