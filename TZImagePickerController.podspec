@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TZImagePickerController"
-  s.version      = "3.8.8"
+  s.version      = "3.9.0"
   s.summary      = "A clone of UIImagePickerController, support picking multiple photos、original photo and video"
   s.homepage     = "https://github.com/iBringer/TZImagePickerController.git"
   s.license      = "MIT"
