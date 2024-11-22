@@ -99,10 +99,17 @@
     CMTime currentTime = _player.currentItem.currentTime;
     CMTime durationTime = _player.currentItem.duration;
     if (_player.rate == 0.0f) {
-        if (currentTime.value == durationTime.value) [_player.currentItem seekToTime:CMTimeMake(0, 1)];
-        [_player play];
-        _toolBar.hidden = YES;
-        [_playButton setImage:nil forState:UIControlStateNormal];
+        if (currentTime.value == durationTime.value) {
+            __weak typeof(self) weakSelf = self;
+            [_player.currentItem seekToTime:CMTimeMake(0, 1) completionHandler:^(BOOL finished) {
+                if (finished) {
+                    __strong typeof(weakSelf) strongSelf = weakSelf;
+                    [strongSelf->_player play];
+                    strongSelf->_toolBar.hidden = YES;
+                    [strongSelf->_playButton setImage:nil forState:UIControlStateNormal];
+                }
+            }];
+        }
     } else {
         [self pausePlayerAndShowNaviBar];
     }

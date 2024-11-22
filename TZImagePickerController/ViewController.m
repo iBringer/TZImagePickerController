@@ -7,20 +7,19 @@
 //
 
 #import "ViewController.h"
+#import <Photos/Photos.h>
 #import "TZImagePickerController.h"
 #import "UIView+TZLayout.h"
 #import "TZTestCell.h"
-#import <Photos/Photos.h>
 #import "LxGridViewFlowLayout.h"
 #import "TZImageManager.h"
 #import "TZVideoPlayerController.h"
 #import "TZPhotoPreviewController.h"
 #import "TZGifPhotoPreviewController.h"
-#import "TZAssetCell.h"
-#import <MobileCoreServices/MobileCoreServices.h>
 #import "FLAnimatedImage.h"
 #import "TZImageUploadOperation.h"
 #import "TZVideoEditedPreviewController.h"
+#import <MobileCoreServices/MobileCoreServices.h>
 
 @interface ViewController ()<TZImagePickerControllerDelegate,UICollectionViewDataSource,UICollectionViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate> {
     NSMutableArray *_selectedPhotos;
