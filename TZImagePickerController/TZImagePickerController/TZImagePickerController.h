@@ -24,6 +24,7 @@
 #import "TZGifPhotoPreviewController.h"
 #import "TZPhotoPreviewController.h"
 #import "TZPhotoPreviewCell.h"
+#import "TZAssetCell.h"
 
 #if __has_include("TZLocationManager.h")
 #define TZ_HAVE_LOCATION_CODE   1

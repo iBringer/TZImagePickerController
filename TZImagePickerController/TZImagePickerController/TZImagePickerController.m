@@ -11,7 +11,6 @@
 #import "TZPhotoPickerController.h"
 #import "TZPhotoPreviewController.h"
 #import "TZAssetModel.h"
-#import "TZAssetCell.h"
 #import "UIView+TZLayout.h"
 #import "TZImageManager.h"
 #import "TZVideoCropController.h"
